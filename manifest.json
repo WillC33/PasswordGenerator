@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Secure Password Generator",
+  "version": "1.0",
+  "description": "Generates secure passwords",
+  "permissions": ["clipboardWrite"],
+  "content_scripts": [
+    {
+      "matches": ["*://*/popup.html"],
+      "js": ["popup.js"]
+    }
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "favicon-16x16.png",
+      "48": "favicon-48x48.png",
+      "128": "favicon-128x128.png"
+    }
+  },
+  "icons": {
+    "16": "favicon-16x16.png",
+    "48": "favicon-48x48.png",
+    "128": "favicon-128x128.png"
+  }
+}
